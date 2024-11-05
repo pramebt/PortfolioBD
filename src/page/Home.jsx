@@ -30,7 +30,7 @@ const Home = () => {
         <div className="flex flex-row w-max space-x-2">
           <label className="text-white text-[24px] ">"</label>
           <h3 class=" animate-typing overflow-hidden whitespace-nowrap border-r-2 border-r-white pr-0 text-[24px] text-white font-mono">
-            Hello World !
+            Ahlo !
           </h3>
           <label className="text-white text-[24px] ">"</label>
         </div>
