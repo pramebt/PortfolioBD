@@ -1,7 +1,7 @@
 import React from "react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaPhoneSquare } from "react-icons/fa";
-
+import { FaSquareFacebook } from "react-icons/fa6";
 const Home = () => {
   return (
 
@@ -37,13 +37,15 @@ const Home = () => {
       </div>
 
       <div className="absolute bottom-0 left-[50%] translate-x-[-50%] mb-10 flex flex-row space-x-5">
-        <div className="opacity-[50%] hover:opacity-[100%] hover:scale-110 ease-in-out duration-200">
+        <a href = "https://www.instagram.com/prame.bt" className="opacity-[50%] hover:opacity-[100%] hover:scale-110 ease-in-out duration-200">
         <IoLogoInstagram color='white' size={35} />
-        </div>
-        <div className="opacity-[50%] hover:opacity-[100%] hover:scale-110 ease-in-out duration-200">
+        </a>
+        <a className="opacity-[50%] hover:opacity-[100%] hover:scale-110 ease-in-out duration-200">
         <FaPhoneSquare color='white' size={35}/>
-        </div>
-        
+        </a>
+        <a href="https://www.facebook.com/bandit.prame/" className="opacity-[50%] hover:opacity-[100%] hover:scale-110 ease-in-out duration-200">
+        <FaSquareFacebook color='white' size={35}/>
+        </a>
       </div>
     </div>
   );
