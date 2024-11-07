@@ -23,9 +23,9 @@ function App() {
           <Menu ClickSidebar={ClickSidebar} />
         </div>
       </div>
-      <div className="min-h-screen">
+      
         <RouterProvider router={router} />
-      </div>
+      
     </>
   );
 }

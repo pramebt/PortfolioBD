@@ -61,7 +61,7 @@ import {
           transformStyle: "preserve-3d",
           transform,
         }}
-        className="relative h-[290px] w-[290px] rounded-xl bg-gradient-to-br from-white to-white "
+        className="relative h-[290px] w-[290px] rounded-xl bg-gradient-to-br from-blue-950 to-cyan-200"
       >
         <div
           style={{
