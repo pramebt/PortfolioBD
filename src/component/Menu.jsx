@@ -4,10 +4,10 @@ const Menu = ({ ClickSidebar }) => {
   console.log(ClickSidebar);
   return (
     <div
-      className={`absolute z-[10] bg-black  bottom-0 left-0 h-screen w-screen transition-transform duration-300 ${
+      className={`fixed z-[10] bg-black  bottom-0 left-0 h-screen w-screen transition-transform duration-300 ${
         ClickSidebar
           ? "translate-y-0 animate-bounce-once"
-          : "translate-y-full animate-bounce-once"
+          : "translate-y-[-100%] animate-bounce-once"
       }`}
     >
       <div

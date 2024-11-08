@@ -1,14 +1,16 @@
 import React from "react";
 import HoverCard from "../component/TiltCard";
 import Button from "../component/Button";
-
+import CardHover from "../component/CardHover";
+import CardHover1 from "../component/CardHover";
+import Skills from "../component/Skills";
 
 const About = () => {
   return (
     <div className="bg-[#FAFAFA] h-screen w-screen scroll-py-10">
-      <div className="absolute  top-[5%] left-[50%] translate-x-[-50%] space-x-3">
-        <label className="text-[#000000] text-[32px] font-extrabold">About</label>
-        <label className="text-[#005691] text-[32px] font-extrabold">Me</label>
+      <div className="absolute  top-[5%] left-[50%] translate-x-[-50%] space-x-3 text-[48px]">
+        <label className="text-[#000000] font-extrabold">About</label>
+        <label className="text-[#005691]  font-extrabold">Me</label>
       </div>
       <div className="absolute  top-[15%] left-[50%] translate-x-[-50%] ">
         <div className=" flex flex-col space-x-20 ">
@@ -25,7 +27,7 @@ const About = () => {
           </label>
         </div>
         <div className="mt-[10px] left-0 text-center ">
-          <Button/>
+          <Button />
         </div>
         <div className="mt-[10px] left-0 ">
           <label className="text-black text-[20px] "></label>
@@ -36,19 +38,49 @@ const About = () => {
         <div className="left-0 ">
           <div className="text-center w-[1000px]">
             <label className="text-black text-[32px] font-light italic">
-              I'm a student. Be a person who is ready to work with
-              others. Ready to develop yourself to have skills in working and I
-              want to enhance skills thought hands-on learning, collaboration
-              ondiverse projects, and delivering impactful outcome, all geared
-              towards preparing for successful career in the Developer.
+              I'm a student. Be a person who is ready to work with others. Ready
+              to develop yourself to have skills in working and I want to
+              enhance skills thought hands-on learning, collaboration ondiverse
+              projects, and delivering impactful outcome, all geared towards
+              preparing for successful career in the Developer.
             </label>
           </div>
-          <div className="bg-cyan-800 h-[5px] mt-[10px] rounded-md">
+          <div className="bg-cyan-800 h-[5px] mt-[10px] rounded-md"></div>
+        </div>
+        <div className="relative justify-center mt-[48px] space-x-[64px] flex">
+          <CardHover1
+            num={1}
+            text={"play together"}
+            text2={"play together with my friends"}
+          />
+          <CardHover1
+            num={2}
+            text={"play together"}
+            text2={"play together with my friends"}
+          />
+        </div>
+        <div className="relative justify-center mt-[48px] space-x-[64px] flex">
+          <CardHover1
+            num={3}
+            text={"play together"}
+            text2={"play together with my friends"}
+          />
+        </div>
+        <div className="absolute border-2 border-red-400 mt-[5%] left-[50%] translate-x-[-50%]">
+          <div className="relative text-center space-x-3 text-[48px] ">
+            <label className="text-[#000000] font-extrabold">My</label>
+            <label className="text-[#005691] font-extrabold">Skills</label>
           </div>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, nihil!
+          <div className="flex space-x-5 mt-[48px]">
+            <div className="">
+            <label className="text-black font-bold ml-5">ROV</label>
+            <Skills percent={40} />
+            </div>
+            <div>
+            <label className="text-black font-bold ml-5">ROV</label>
+            <Skills percent={70} />
+            </div>
           </div>
-          
         </div>
       </div>
     </div>
