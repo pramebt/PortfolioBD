@@ -8,7 +8,7 @@ import Contact from "./page/Contact";
 import Portfolio from "./page/Portfolio";
 
 function App() {
-  const [ClickSidebar, setClickSidebar] = useState(true);
+  const [ClickSidebar, setClickSidebar] = useState(false);
   const MoveSidebar = () => {
     setClickSidebar(!ClickSidebar);
   };
@@ -20,7 +20,9 @@ function App() {
         <MenuButton onClick={MoveSidebar} />
 
         <div className="absolute ">
-          <Menu ClickSidebar={ClickSidebar} />
+          <Menu 
+          ClickSidebar={ClickSidebar} 
+          setClickSidebar={setClickSidebar}/>
         </div>
       </div>
       

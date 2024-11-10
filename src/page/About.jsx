@@ -4,6 +4,7 @@ import Button from "../component/Button";
 import CardHover from "../component/CardHover";
 import CardHover1 from "../component/CardHover";
 import Skills from "../component/Skills";
+import { Hovericon } from "../component/Hovericon";
 
 const About = () => {
   return (
@@ -66,20 +67,20 @@ const About = () => {
             text2={"play together with my friends"}
           />
         </div>
-        <div className="absolute border-2 border-red-400 mt-[5%] left-[50%] translate-x-[-50%]">
+        <div className="relative border-2 border-red-400 mt-[5%] left-[50%] translate-x-[-50%]">
           <div className="relative text-center space-x-3 text-[48px] ">
             <label className="text-[#000000] font-extrabold">My</label>
             <label className="text-[#005691] font-extrabold">Skills</label>
           </div>
-          <div className="flex space-x-5 mt-[48px]">
-            <div className="">
-            <label className="text-black font-bold ml-5">ROV</label>
-            <Skills percent={40} />
-            </div>
-            <div>
-            <label className="text-black font-bold ml-5">ROV</label>
-            <Skills percent={70} />
-            </div>
+          <div className="relative grid grid-rows-3 grid-cols-3 gap-40 h-full w-full border-2 border-green-800 ">
+            
+      
+              <Hovericon Icon= "Game" text={'Game'}/>
+              <Hovericon Icon= "IG" text={'IG'}/>
+              <Hovericon />
+              
+              <Hovericon />
+            
           </div>
         </div>
       </div>
