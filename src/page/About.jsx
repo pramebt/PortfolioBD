@@ -72,15 +72,14 @@ const About = () => {
             <label className="text-[#000000] font-extrabold">My</label>
             <label className="text-[#005691] font-extrabold">Skills</label>
           </div>
-          <div className="relative grid grid-rows-3 grid-cols-3 gap-40 h-full w-full border-2 border-green-800 ">
-            
-      
-              <Hovericon Icon= "Game" text={'Game'}/>
-              <Hovericon Icon= "IG" text={'IG'}/>
+          <div className=" h-screen ">
+            <div className="justify-items-center grid grid-rows-3 grid-cols-3 h-full w-full border-2 border-green-800">
+              <Hovericon Icon="React" text={"React"} />
+              <Hovericon Icon="Html" text={"Html"} />
+              <Hovericon Icon="Html" text={""} />
+
               <Hovericon />
-              
-              <Hovericon />
-            
+            </div>
           </div>
         </div>
       </div>

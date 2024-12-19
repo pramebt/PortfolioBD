@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { FaReact } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoGameControllerOutline } from "react-icons/io5";
+import { FaHtml5 } from "react-icons/fa";
 export const Hovericon = ({Icon,text}) => {
   const [hoverState, setHoverState] = useState(false);
   return (
     <div>
-      <div className=" w-[200px] h-[200px] mt-10 rounded-[50%]">
+      <div className="border-2 border-red-400 w-[200px] h-[200px] mt-10 rounded-[50%]">
         <div
           className={`relative ${
             hoverState
@@ -25,9 +26,16 @@ export const Hovericon = ({Icon,text}) => {
               } transition-all duration-1000 ease-in-out`}
             >
               
-        {Icon == 'Game' && (
-          <IoGameControllerOutline
-          color={hoverState ? "cyan" : "cyan"}
+        {Icon == 'React' && (
+          <FaReact
+          color={hoverState ? "cyan" : "white"}
+          size={hoverState ? 120 : 90}
+          />
+        
+        )}
+        {Icon == 'Html' && (
+          <FaHtml5
+          color={hoverState ? "#ff5733" : "white"}
           size={hoverState ? 120 : 90}
           />
         
@@ -40,7 +48,7 @@ export const Hovericon = ({Icon,text}) => {
         
         )}
               <p
-                className={` transform text-center font-bold  ${
+                className={` transform text-center mt-[20px] font-bold text-[#004A7C] ${
                   hoverState ? "scale-125" : "scale-100 text-[0px]"
                 } transition-all duration-1000 ease-in-out`}
               >
