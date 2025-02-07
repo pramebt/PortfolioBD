@@ -6,7 +6,7 @@ const Skills = ({ percent }) => {
       <div
         className="relative bg-[#E8F1F5] h-full rounded-[50px] overflow-hidden text-center " style={{ width: `${percent}%` }}
       >
-        <p className="absolute border-2 border-red-300 h-full w-full text-[18px] font-bold " >{percent}%</p>
+        <p className="absolute h-full w-full text-[18px] font-bold " >{percent}%</p>
       </div>
     </div>
   );

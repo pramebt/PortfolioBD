@@ -7,7 +7,7 @@ export const Hovericon = ({Icon,text}) => {
   const [hoverState, setHoverState] = useState(false);
   return (
     <div>
-      <div className="border-2 border-red-400 w-[200px] h-[200px] mt-10 rounded-[50%]">
+      <div className=" w-[200px] h-[200px] mt-10 rounded-[50%]">
         <div
           className={`relative ${
             hoverState

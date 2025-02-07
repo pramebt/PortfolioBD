@@ -67,13 +67,13 @@ const About = () => {
             text2={"play together with my friends"}
           />
         </div>
-        <div className="relative border-2 border-red-400 mt-[5%] left-[50%] translate-x-[-50%]">
+        <div className="relative  mt-[5%] left-[50%] translate-x-[-50%]">
           <div className="relative text-center space-x-3 text-[48px] ">
             <label className="text-[#000000] font-extrabold">My</label>
             <label className="text-[#005691] font-extrabold">Skills</label>
           </div>
           <div className=" h-screen ">
-            <div className="justify-items-center grid grid-rows-3 grid-cols-3 h-full w-full border-2 border-green-800">
+            <div className="justify-items-center grid grid-rows-3 grid-cols-3 h-full w-full ">
               <Hovericon Icon="React" text={"React"} />
               <Hovericon Icon="Html" text={"Html"} />
               <Hovericon Icon="Html" text={""} />
