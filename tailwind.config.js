@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const textStroke = require('tailwindcss-text-stroke');
+
 export default {
   content: [
     "./index.html",
