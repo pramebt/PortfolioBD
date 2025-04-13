@@ -3,6 +3,7 @@ import { FaReact } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 export const Hovericon = ({Icon,text}) => {
   const [hoverState, setHoverState] = useState(false);
   return (
@@ -36,6 +37,13 @@ export const Hovericon = ({Icon,text}) => {
         {Icon == 'Html' && (
           <FaHtml5
           color={hoverState ? "#ff5733" : "white"}
+          size={hoverState ? 120 : 90}
+          />
+        
+        )}
+        {Icon == 'Tailwind CSS' && (
+          <SiTailwindcss 
+          color={hoverState ? "cyan" : "white"}
           size={hoverState ? 120 : 90}
           />
         

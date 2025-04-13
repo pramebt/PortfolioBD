@@ -51,20 +51,20 @@ const About = () => {
         <div className="relative justify-center mt-[48px] space-x-[64px] flex">
           <CardHover1
             num={1}
-            text={"play together"}
-            text2={"play together with my friends"}
+            text={"add info here"}
+            text2={"........."}
           />
           <CardHover1
             num={2}
-            text={"play together"}
-            text2={"play together with my friends"}
+            text={"add info here"}
+            text2={"........."}
           />
         </div>
         <div className="relative justify-center mt-[48px] space-x-[64px] flex">
           <CardHover1
             num={3}
-            text={"play together"}
-            text2={"play together with my friends"}
+            text={"add info here"}
+            text2={"........."}
           />
         </div>
         <div className="relative  mt-[5%] left-[50%] translate-x-[-50%]">
@@ -76,9 +76,7 @@ const About = () => {
             <div className="justify-items-center grid grid-rows-3 grid-cols-3 h-full w-full ">
               <Hovericon Icon="React" text={"React"} />
               <Hovericon Icon="Html" text={"Html"} />
-              <Hovericon Icon="Html" text={""} />
-
-              <Hovericon />
+              <Hovericon Icon="Tailwind CSS" text={"Tailwind CSS"} />
             </div>
           </div>
         </div>
